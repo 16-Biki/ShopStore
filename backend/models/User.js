@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
 
     avatar: {
       type: String,
-      default: "http://localhost:5173/profile.png",
+      default: "https://shop-store-eta.vercel.app/profile.png",
     },
   },
   { timestamps: true },
