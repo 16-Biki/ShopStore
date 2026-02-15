@@ -1,6 +1,11 @@
 import axios from "axios";
 
+const BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:5000/api"
+    : "https://shopstore-v706.onrender.com/api";
+
 export const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: BASE_URL,
   withCredentials: true,
 });
