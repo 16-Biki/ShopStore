@@ -25,10 +25,12 @@ exports.login = async (req, res) => {
 
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
 
-  res.cookie("token", token, {
-    httpOnly: true,
-    sameSite: "lax",
-  });
+res.cookie("token", token, {
+  httpOnly: true,
+  secure: true,
+  sameSite: "none",
+});
+
 
   res.json({
     _id: user._id,
