@@ -2,7 +2,10 @@ const Product = require("../models/Product");
 
 exports.createProduct = async (req, res) => {
   if (!req.file) return res.status(400).json("No image");
-
+ /*
+    Convert uploaded image buffer to Base64 string
+    This allows storing image directly inside MongoDB
+  */
   const base64 =
     "data:" +
     req.file.mimetype +
