@@ -113,7 +113,7 @@ export default function Admin() {
         <button onClick={addProduct}>Add Product</button>
       </div>
 
-      {/* MY PRODUCTS */}
+    
       <h3>My Products</h3>
 
       {loadingProducts ? (
@@ -135,7 +135,7 @@ export default function Admin() {
         </div>
       )}
 
-      {/* MY ORDERS */}
+
       <h3>My Orders</h3>
 
       {loadingOrders ? (
