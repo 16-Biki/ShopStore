@@ -114,7 +114,7 @@ export default function Cart() {
         />
 
         <input
-          placeholder="Phone"
+          placeholder="Phone Number"
           value={addr.phone}
           onChange={(e) => setAddr({ ...addr, phone: e.target.value })}
         />
@@ -132,13 +132,13 @@ export default function Cart() {
         />
 
         <input
-          placeholder="ZIP"
+          placeholder="Pin Code"
           value={addr.zip}
           onChange={(e) => setAddr({ ...addr, zip: e.target.value })}
         />
 
         <input
-          placeholder="Street"
+          placeholder="Landmark"
           value={addr.street}
           onChange={(e) => setAddr({ ...addr, street: e.target.value })}
         />
